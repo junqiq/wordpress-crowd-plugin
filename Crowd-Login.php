@@ -4,8 +4,9 @@ Plugin Name: Crowd Login
 Plugin URI:
 Description:  Authenticates Wordpress usernames against Atlassian Crowd.
 Version: 0.1
-Author: Andrew Teixeira
-Author URI:
+Author: Jun Matsushita
+Original Author: Andrew Teixeira
+Original Plugin URI: https://github.com/broadinstitute/wordpress-crowd-plugin
 */
 
 require_once( WP_PLUGIN_DIR."/crowd-login/Crowd.php");

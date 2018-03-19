@@ -50,3 +50,6 @@ This is simply a high level overview. The actual logic the plugin employs is mor
 
 ### Version 0.1
 * Original release.
+
+### Version 0.2
+* Fork
