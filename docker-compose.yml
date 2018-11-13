@@ -1,0 +1,30 @@
+###
+# Wordpress admin accounts for docker-compose
+#
+#  username: wpadm
+#  password: downtherabbithole
+#
+version: '2.0'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    links:
+      - mysql:mysql
+    ports:
+      - 9000:80
+    depends_on:
+      - mysql
+    volumes:
+      - .:/var/www/html/wp-content/plugins/crowd-login
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+    env_file: docker.env
+  mysql:
+    image: mysql
+    ports:
+      - '3306:3306'
+    env_file: docker.env
+    volumes:
+      - ./docker/db_data:/var/lib/mysql
+      - ./docker/mysql.init.sql:/docker-entrypoint-initdb.d/install_wordpress.sql
