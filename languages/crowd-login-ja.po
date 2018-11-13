@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.7\n"
+
+#: application/CrowdLoginAdminApplication.php:23
+msgid "Crowd Login"
+msgstr "Crowd認証"
+
+#: application/CrowdLoginAdminApplication.php:133
+msgid "Congratulations! The test succeeded. The Role of this account is \"%s\" ."
+msgstr "認証テスト成功。このユーザのロールは’%s’です。"
+
+#: application/CrowdLoginAdminApplication.php:135
+msgid ""
+"Failure. Your settings do not seem to work yet or the credentials are either wrong or have "
+"insufficient group membership."
+msgstr "認証テスト失敗。ユーザ情報及びCrowdの設定を確認して下さい。"
+
+#: models/CwUser.php:36
+msgid "The user have no group for this crowd-app."
+msgstr "ユーザはCrowdのアプリケーション名に紐付いたグループに所属する必要があります。"
+
+#: repository/UserRepository.php:31
+msgid "<strong>Crowd Login Error</strong>: Crowd Login mode does not permit account creation."
+msgstr ""
+"<strong>Crowdログインエラー</strong>: 現在のログインモードの設定ではWordpressユーザの作成が"
+"できません。"
+
+#: service/UserService.php:56
+msgid "<strong>ERROR</strong>: The username field is empty."
+msgstr "<strong>エラー</strong>: ユーザ名を入力して下さい。"
+
+#: service/UserService.php:59
+msgid "<strong>ERROR</strong>: The password field is empty."
+msgstr "<strong>エラー</strong>: パスワードを入力して下さい。"
+
+#: view/CrowdLoginAdminView.php:6
+msgid "Crowd Login v0.2"
+msgstr "Crowd認証 v0.2"
+
+#: view/CrowdLoginAdminView.php:8
+msgid "Crowd Settings"
+msgstr "Crowd設定"
+
+#: view/CrowdLoginAdminView.php:12
+msgid "Application Name"
+msgstr "アプリケーション名"
+
+#: view/CrowdLoginAdminView.php:15
+msgid "*The application name given to you by your Crowd administrator."
+msgstr "*Crowd管理者から与えられたアプリケーション名。"
+
+#: view/CrowdLoginAdminView.php:19
+msgid "Application Password"
+msgstr "アプリケーションパスワード"
+
+#: view/CrowdLoginAdminView.php:22
+msgid "*The application password given to you by your Crowd administrator."
+msgstr "*Crowd管理者から与えられたアプリケーションパスワード。"
+
+#: view/CrowdLoginAdminView.php:26
+msgid "Crowd URL"
+msgstr "CrowdのURL"
+
+#: view/CrowdLoginAdminView.php:29
+msgid "*Example: https://crowd.example.com:8443/crowd"
+msgstr "*例: https://crowd.example.com:8443/crowd"
+
+#: view/CrowdLoginAdminView.php:34
+msgid "Advanced mode"
+msgstr "詳細モード設定"
+
+#: view/CrowdLoginAdminView.php:38 view/CrowdLoginAdminView.php:41
+msgid "Login mode"
+msgstr "ログインモード"
+
+#: view/CrowdLoginAdminView.php:42
+msgid "<strong>Auto Creation</strong> (default)"
+msgstr "<strong>自動作成</strong> (初期値)"
+
+#: view/CrowdLoginAdminView.php:42
+msgid "<strong>Manual</strong>"
+msgstr "<strong>手動</strong>"
+
+#: view/CrowdLoginAdminView.php:43
+msgid ""
+"Authenticate Wordpress users against Crowd. I will create the accounts in Wordpress myself."
+msgstr ""
+"Crowdで認証を行いますが、同じ名前のWordpressのアカウントを手動で作成する必要があります。"
+
+#: view/CrowdLoginAdminView.php:44
+msgid ""
+"Create Wordpress accounts for anyone who successfully authenticates against Crowd. (default)"
+msgstr "Crowdで認証が成功した場合、Wordpressにそのユーザがいなければ新規作成されます。"
+
+#: view/CrowdLoginAdminView.php:50 view/CrowdLoginAdminView.php:53
+msgid "Security mode"
+msgstr "セキュリティーモード"
+
+#: view/CrowdLoginAdminView.php:55
+msgid "<strong>Low</strong> (default)"
+msgstr "<strong>ノーマル</strong> (初期値)"
+
+#: view/CrowdLoginAdminView.php:56
+msgid ""
+"Default mode. First attempts to login with Crowd accounts, failing that, it attempts to "
+"login using the local Wordpress password. If you intend to use a mixture of local and Crowd "
+"accounts, leave this mode enabled."
+msgstr "Crowd認証に失敗した場合はWordpressのユーザ認証を実行します。"
+
+#: view/CrowdLoginAdminView.php:58
+msgid "<strong>High</strong>"
+msgstr "<strong>高セキュリティ</strong>"
+
+#: view/CrowdLoginAdminView.php:59
+msgid ""
+"Restrict login to only Crowd accounts. If a Wordpress username fails to authenticate "
+"against Crowd, login will fail. More secure."
+msgstr "Crowd認証のみを実行します。"
+
+#: view/CrowdLoginAdminView.php:67
+msgid "Save changes"
+msgstr "設定を保存する"
+
+#: view/CrowdLoginAdminView.php:73 view/CrowdLoginAdminView.php:80
+msgid "Setting Test"
+msgstr "設定テスト"
+
+#: view/CrowdLoginAdminView.php:74
+msgid "Use this form as a authentication test for those settings you saved."
+msgstr "このフォームからCrowdユーザアカウントの認証テストが行えます。"
+
+#: view/CrowdLoginAdminView.php:83
+msgid "Test connection"
+msgstr "ユーザをテストする"
+
+#: view/CrowdLoginAdminView.php:87
+msgid "Test Results:"
+msgstr "テスト結果:"
